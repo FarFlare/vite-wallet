@@ -36,6 +36,14 @@
 "authenticationPasswordInputTitle" = "Enter your password";
 "authenticationPasswordInputPlaceholder" = "Password";
 
+// Onboarding
+"onboardingPage1Title" = "Try the simple wallet";
+"onboardingPage1Text" = "Vite wallet understandable even for a beginner";
+"onboardingPage2Title" = "Integrate assets";
+"onboardingPage2Text" = "from different platforms and store them securely";
+"onboardingPage3Title" = "Convert assets";
+"onboardingPage3Text" = "from one your network to another";
+
 // SalesHistory
 "historyTitle" = "Transaction History";
 

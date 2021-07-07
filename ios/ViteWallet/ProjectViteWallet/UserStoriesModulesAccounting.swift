@@ -17,6 +17,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case wallet
     case mainMenu
     case authentication
+    case onboarding
 
     func createModule() -> UIViewController {
         switch self {
@@ -34,6 +35,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return MainMenuCoordinator.createModule()
         case .authentication: 
             return AuthenticationCoordinator.createModule()
+        case .onboarding: 
+            return OnboardingCoordinator.createModule()
         }
     }
 }
@@ -47,6 +50,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case wallet(output: WalletOutput)
     case mainMenu(output: MainMenuOutput)
     case authentication(output: AuthenticationOutput)
+    case onboarding(output: OnboardingOutput)
 
     func createModule() -> UIViewController {
         switch self {
@@ -82,6 +86,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .authentication(let output): 
             return AuthenticationCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .onboarding(let output): 
+            return OnboardingCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

@@ -123,6 +123,15 @@
 		897099EC269579E80082F99D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 897099E6269579E80082F99D /* OpenSans-Regular.ttf */; };
 		897099EE269581570082F99D /* TitledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099ED269581570082F99D /* TitledView.swift */; };
 		897099F2269583DA0082F99D /* String+isEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099F1269583DA0082F99D /* String+isEmail.swift */; };
+		89709A05269635860082F99D /* OnboardingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099FB269635860082F99D /* OnboardingViewModelProtocol.swift */; };
+		89709A06269635860082F99D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099FC269635860082F99D /* OnboardingViewModel.swift */; };
+		89709A07269635860082F99D /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099FE269635860082F99D /* OnboardingCoordinator.swift */; };
+		89709A08269635860082F99D /* OnboardingCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099FF269635860082F99D /* OnboardingCoordinatorProtocol.swift */; };
+		89709A09269635860082F99D /* OnboardingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A00269635860082F99D /* OnboardingInput.swift */; };
+		89709A0A269635860082F99D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A02269635860082F99D /* OnboardingViewController.swift */; };
+		89709A0C269635860082F99D /* OnboardingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A04269635860082F99D /* OnboardingOutput.swift */; };
+		89709A0E269637410082F99D /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A0D269637410082F99D /* OnboardingPageViewController.swift */; };
+		89709A10269637990082F99D /* OnboardingPageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A0F269637990082F99D /* OnboardingPageContent.swift */; };
 		897816622674E36C00710B13 /* SettingsStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165D2674E36C00710B13 /* SettingsStoring.swift */; };
 		897816632674E36C00710B13 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165E2674E36C00710B13 /* SecureStorage.swift */; };
 		897816642674E36C00710B13 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165F2674E36C00710B13 /* UserDefaultsStorage.swift */; };
@@ -295,6 +304,15 @@
 		897099E6269579E80082F99D /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		897099ED269581570082F99D /* TitledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledView.swift; sourceTree = "<group>"; };
 		897099F1269583DA0082F99D /* String+isEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isEmail.swift"; sourceTree = "<group>"; };
+		897099FB269635860082F99D /* OnboardingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelProtocol.swift; sourceTree = "<group>"; };
+		897099FC269635860082F99D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		897099FE269635860082F99D /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		897099FF269635860082F99D /* OnboardingCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89709A00269635860082F99D /* OnboardingInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInput.swift; sourceTree = "<group>"; };
+		89709A02269635860082F99D /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		89709A04269635860082F99D /* OnboardingOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingOutput.swift; sourceTree = "<group>"; };
+		89709A0D269637410082F99D /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		89709A0F269637990082F99D /* OnboardingPageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageContent.swift; sourceTree = "<group>"; };
 		8978165D2674E36C00710B13 /* SettingsStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStoring.swift; sourceTree = "<group>"; };
 		8978165E2674E36C00710B13 /* SecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		8978165F2674E36C00710B13 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
@@ -853,6 +871,46 @@
 			path = OpenSans;
 			sourceTree = "<group>";
 		};
+		897099F9269635860082F99D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				89709A00269635860082F99D /* OnboardingInput.swift */,
+				89709A04269635860082F99D /* OnboardingOutput.swift */,
+				897099FD269635860082F99D /* Coordinator */,
+				897099FA269635860082F99D /* ViewModel */,
+				89709A01269635860082F99D /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		897099FA269635860082F99D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				897099FB269635860082F99D /* OnboardingViewModelProtocol.swift */,
+				897099FC269635860082F99D /* OnboardingViewModel.swift */,
+				89709A0F269637990082F99D /* OnboardingPageContent.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		897099FD269635860082F99D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				897099FF269635860082F99D /* OnboardingCoordinatorProtocol.swift */,
+				897099FE269635860082F99D /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89709A01269635860082F99D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89709A02269635860082F99D /* OnboardingViewController.swift */,
+				89709A0D269637410082F99D /* OnboardingPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8978165C2674E36C00710B13 /* StorageService */ = {
 			isa = PBXGroup;
 			children = (
@@ -1008,6 +1066,7 @@
 				894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */,
 				8940651D2612327B00DC682F /* Loading */,
 				8970997F269571D00082F99D /* Authentication */,
+				897099F9269635860082F99D /* Onboarding */,
 				8978166B2674EE1D00710B13 /* MainMenu */,
 				897099A3269575840082F99D /* History */,
 				89709997269575840082F99D /* Wallet */,
@@ -1275,14 +1334,18 @@
 				894064EF2612308800DC682F /* AnnouncementViewController.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
 				89709992269571D00082F99D /* AuthenticationViewController.swift in Sources */,
+				89709A0A269635860082F99D /* OnboardingViewController.swift in Sources */,
 				8970998C269571D00082F99D /* AuthenticationViewModel.swift in Sources */,
 				8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				89709972269569530082F99D /* UI+resources.swift in Sources */,
 				8970998D269571D00082F99D /* AuthenticationCoordinator.swift in Sources */,
+				89709A07269635860082F99D /* OnboardingCoordinator.swift in Sources */,
 				8965F11C2675C21700454B69 /* SettingsOutput.swift in Sources */,
+				89709A0E269637410082F99D /* OnboardingPageViewController.swift in Sources */,
 				8965F1372675CC4300454B69 /* AboutUsViewController.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
+				89709A06269635860082F99D /* OnboardingViewModel.swift in Sources */,
 				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
 				8970998B269571D00082F99D /* AuthenticationViewModelProtocol.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
@@ -1306,6 +1369,7 @@
 				8965F1162675C21700454B69 /* SettingsViewModel.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
 				896F4AD82692A22B00E9F65C /* GlowView.swift in Sources */,
+				89709A05269635860082F99D /* OnboardingViewModelProtocol.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
@@ -1355,9 +1419,11 @@
 				897099B3269575840082F99D /* WalletOutput.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
+				89709A08269635860082F99D /* OnboardingCoordinatorProtocol.swift in Sources */,
 				8965F11A2675C21700454B69 /* SettingsTableViewCell.swift in Sources */,
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
 				897099F2269583DA0082F99D /* String+isEmail.swift in Sources */,
+				89709A10269637990082F99D /* OnboardingPageContent.swift in Sources */,
 				8965F1192675C21700454B69 /* SettingsView.swift in Sources */,
 				89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
@@ -1369,6 +1435,7 @@
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
 				899B077226931960007A0F16 /* PurchaseManager.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
+				89709A0C269635860082F99D /* OnboardingOutput.swift in Sources */,
 				899B077126931960007A0F16 /* PurchaseManagerProtocol.swift in Sources */,
 				8965F1152675C21700454B69 /* SettingsViewModelProtocol.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
@@ -1390,6 +1457,7 @@
 				894064E92612308800DC682F /* UIStyleManager.swift in Sources */,
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
 				8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */,
+				89709A09269635860082F99D /* OnboardingInput.swift in Sources */,
 				896F4ADC2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				897099B0269575840082F99D /* WalletViewModel.swift in Sources */,

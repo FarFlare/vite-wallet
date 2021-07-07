@@ -24,7 +24,7 @@ extension LoadingViewModel: LoadingViewModelProtocol {
     }
     
     func checkActiveUser(_ completion: @escaping(Bool) -> Void) {
-        completion(true)
+        completion(false)
     }
 }
 

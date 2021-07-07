@@ -26,6 +26,25 @@ class UIStyleManager {
         ])
     }
     
+    static func addTopLeftText(_ view: UIView, text: String?) {
+        guard let text = text
+        else { return }
+        
+        let label = UILabel()
+        view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .res.avertaCYSemibold(size: 12)
+        label.numberOfLines = 0
+        label.textColor = .res.tintMain()
+        label.text = text
+        
+        NSLayoutConstraint.activate([
+            label.widthAnchor.constraint(equalTo: view.widthAnchor),
+            label.bottomAnchor.constraint(equalTo: view.topAnchor, constant: -6),
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
     static func shadow(_ view: UIView) {
         view.layer.shadowColor = R.color.tintGray()?.cgColor
         view.layer.shadowRadius = 4
@@ -54,7 +73,7 @@ class UIStyleManager {
     
     // MARK: - UITextField
     
-    static func textFieldDefault(textField: UITextField, placeholderText: String) {
+    static func textFieldDefault(textField: UITextField, placeholderText: String, underText: String? = nil) {
         textDefaultInput(textField)
         textField.font = .res.avertaCYRegular(size: 16)
         textField.setLeftPaddingPoints(24)
@@ -68,6 +87,8 @@ class UIStyleManager {
         ]
         textField.attributedPlaceholder = NSAttributedString(string: placeholderText,
                                                              attributes: attributes)
+        
+        self.addTopLeftText(textField, text: underText)
     }
     
     // MARK: - Buttons

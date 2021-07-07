@@ -30,4 +30,7 @@ final class AuthenticationCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension AuthenticationCoordinator: AuthenticationCoordinatorProtocol {
 
+    func generateOnboarding() -> UIViewController {
+        return OnboardingCoordinator.createModuleAuthenticationMode()
+    }
 }
