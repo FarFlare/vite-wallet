@@ -13,7 +13,7 @@ final class SettingsViewModel {
 	var output: SettingsOutput?
     
     var purchaseManager: PurchaseManagerProtocol!
-
+    var viteWalletNetwork: ViteWalletNetworkServiceProtocol!
 }
 
 // MARK: - Configuration
@@ -39,7 +39,7 @@ extension SettingsViewModel: SettingsViewModelProtocol {
     }
     
     func logOut() {
-        
+        viteWalletNetwork.logout {}
     }
 
 }

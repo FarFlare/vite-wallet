@@ -70,13 +70,32 @@ final class AuthenticationViewController: UIViewController {
     // MARK: - UI elements actions
     
     @objc private func signInButtonDidTapped(sender: UIButton) {
-        guard let text = _view.emailTextField.text,
-              text.isNotEmpty,
-              text.isEmail
-        else { return }
+        guard let email = _view.emailTextField.text,
+              email.isNotEmpty,
+              email.isEmail,
+              let password = _view.passwordTextField.text,
+              password.count >= 8
+        else {
+            sender.shake()
+            return
+        }
+        sender.tapAnimation()
         
-        sender.tapAnimation()        
-        coordinator.openModule(.loading, openingMode: .showInNewRootNavigationStack)
+        let loadingHUD = AlertManager.getLoadingHUD(on: view)
+        loadingHUD.show(in: view)
+        viewModel.signIn(email: email.lowercased(), password: password) { [ weak self ] result in
+            guard let self = self
+            else { return }
+            
+            loadingHUD.dismiss()
+            switch result {
+            case .success:
+                self.coordinator.openModule(.loading, openingMode: .showInNewRootNavigationStack)
+
+            case .failure:
+                AlertManager.showErrorHUD(on: self._view, withText: .res.error())
+            }
+        }
     }
 }
 
@@ -118,7 +137,7 @@ extension AuthenticationViewController: UITextFieldDelegate {
             
         case _view.passwordTextField:
             if let text = textField.text,
-               !text.isEmpty {
+               text.count >= 8 {
                 _view.manageViewVisibility(view: _view.signInButton, hidden: false)
                 _view.manageStackYPosition(maxVisibleView: _view.signInButton)
             } else {

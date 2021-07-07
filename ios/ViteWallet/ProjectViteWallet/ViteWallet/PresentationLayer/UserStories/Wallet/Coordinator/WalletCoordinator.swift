@@ -19,6 +19,8 @@ final class WalletCoordinator: DefaultCoordinator {
 
         coordinator.transition = view
 
+        viewModel.viteWalletNetwork = ViteWalletNetworkService.shared
+
         if let configuration = configuration {
             configuration(viewModel)
         }

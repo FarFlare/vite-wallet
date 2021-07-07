@@ -132,6 +132,13 @@
 		89709A0C269635860082F99D /* OnboardingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A04269635860082F99D /* OnboardingOutput.swift */; };
 		89709A0E269637410082F99D /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A0D269637410082F99D /* OnboardingPageViewController.swift */; };
 		89709A10269637990082F99D /* OnboardingPageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A0F269637990082F99D /* OnboardingPageContent.swift */; };
+		89709A1D2696551C0082F99D /* ViteWalletNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A142696551C0082F99D /* ViteWalletNetworkServiceProtocol.swift */; };
+		89709A1E2696551C0082F99D /* ViteWalletNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A152696551C0082F99D /* ViteWalletNetworkService.swift */; };
+		89709A1F2696551C0082F99D /* ViteWalletCompletionTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A172696551C0082F99D /* ViteWalletCompletionTypealiases.swift */; };
+		89709A202696551C0082F99D /* ViteWalletRequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A182696551C0082F99D /* ViteWalletRequestResults.swift */; };
+		89709A212696551C0082F99D /* ViteWalletErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A192696551C0082F99D /* ViteWalletErrors.swift */; };
+		89709A222696551C0082F99D /* ViteWalletRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A1B2696551C0082F99D /* ViteWalletRequestBuilder.swift */; };
+		89709A232696551C0082F99D /* ViteWalletRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709A1C2696551C0082F99D /* ViteWalletRoutes.swift */; };
 		897816622674E36C00710B13 /* SettingsStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165D2674E36C00710B13 /* SettingsStoring.swift */; };
 		897816632674E36C00710B13 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165E2674E36C00710B13 /* SecureStorage.swift */; };
 		897816642674E36C00710B13 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978165F2674E36C00710B13 /* UserDefaultsStorage.swift */; };
@@ -313,6 +320,13 @@
 		89709A04269635860082F99D /* OnboardingOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingOutput.swift; sourceTree = "<group>"; };
 		89709A0D269637410082F99D /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		89709A0F269637990082F99D /* OnboardingPageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageContent.swift; sourceTree = "<group>"; };
+		89709A142696551C0082F99D /* ViteWalletNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		89709A152696551C0082F99D /* ViteWalletNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletNetworkService.swift; sourceTree = "<group>"; };
+		89709A172696551C0082F99D /* ViteWalletCompletionTypealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletCompletionTypealiases.swift; sourceTree = "<group>"; };
+		89709A182696551C0082F99D /* ViteWalletRequestResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletRequestResults.swift; sourceTree = "<group>"; };
+		89709A192696551C0082F99D /* ViteWalletErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletErrors.swift; sourceTree = "<group>"; };
+		89709A1B2696551C0082F99D /* ViteWalletRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletRequestBuilder.swift; sourceTree = "<group>"; };
+		89709A1C2696551C0082F99D /* ViteWalletRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViteWalletRoutes.swift; sourceTree = "<group>"; };
 		8978165D2674E36C00710B13 /* SettingsStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStoring.swift; sourceTree = "<group>"; };
 		8978165E2674E36C00710B13 /* SecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		8978165F2674E36C00710B13 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
@@ -624,8 +638,8 @@
 		894065222612327B00DC682F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				894065232612327B00DC682F /* LoadingCoordinator.swift */,
 				894065242612327B00DC682F /* LoadingCoordinatorProtocol.swift */,
+				894065232612327B00DC682F /* LoadingCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -771,8 +785,8 @@
 			children = (
 				8970999E269575840082F99D /* WalletOutput.swift */,
 				8970999F269575840082F99D /* WalletInput.swift */,
-				89709998269575840082F99D /* ViewModel */,
 				8970999B269575840082F99D /* Coordinator */,
+				89709998269575840082F99D /* ViewModel */,
 				897099A0269575840082F99D /* View */,
 			);
 			path = Wallet;
@@ -790,8 +804,8 @@
 		8970999B269575840082F99D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				8970999C269575840082F99D /* WalletCoordinator.swift */,
 				8970999D269575840082F99D /* WalletCoordinatorProtocol.swift */,
+				8970999C269575840082F99D /* WalletCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -911,6 +925,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		89709A132696551C0082F99D /* ViteWalletNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				89709A1A2696551C0082F99D /* RequestBuilder */,
+				89709A162696551C0082F99D /* Entities */,
+				89709A142696551C0082F99D /* ViteWalletNetworkServiceProtocol.swift */,
+				89709A152696551C0082F99D /* ViteWalletNetworkService.swift */,
+			);
+			path = ViteWalletNetworkService;
+			sourceTree = "<group>";
+		};
+		89709A162696551C0082F99D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				89709A172696551C0082F99D /* ViteWalletCompletionTypealiases.swift */,
+				89709A182696551C0082F99D /* ViteWalletRequestResults.swift */,
+				89709A192696551C0082F99D /* ViteWalletErrors.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		89709A1A2696551C0082F99D /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				89709A1C2696551C0082F99D /* ViteWalletRoutes.swift */,
+				89709A1B2696551C0082F99D /* ViteWalletRequestBuilder.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
 		8978165C2674E36C00710B13 /* StorageService */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1040,7 @@
 			children = (
 				899B076E26931960007A0F16 /* PurchaseManager */,
 				8978165C2674E36C00710B13 /* StorageService */,
+				89709A132696551C0082F99D /* ViteWalletNetworkService */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -1335,6 +1380,7 @@
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
 				89709992269571D00082F99D /* AuthenticationViewController.swift in Sources */,
 				89709A0A269635860082F99D /* OnboardingViewController.swift in Sources */,
+				89709A202696551C0082F99D /* ViteWalletRequestResults.swift in Sources */,
 				8970998C269571D00082F99D /* AuthenticationViewModel.swift in Sources */,
 				8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
@@ -1373,9 +1419,12 @@
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
+				89709A212696551C0082F99D /* ViteWalletErrors.swift in Sources */,
+				89709A232696551C0082F99D /* ViteWalletRoutes.swift in Sources */,
 				897816792674EE1D00710B13 /* MainMenuCoordinator.swift in Sources */,
 				8978167A2674EE1D00710B13 /* MainMenuCoordinatorProtocol.swift in Sources */,
 				897099B8269575840082F99D /* HistoryViewModelProtocol.swift in Sources */,
+				89709A1F2696551C0082F99D /* ViteWalletCompletionTypealiases.swift in Sources */,
 				8978167E2674EE1D00710B13 /* MainMenuOutput.swift in Sources */,
 				897099EE269581570082F99D /* TitledView.swift in Sources */,
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
@@ -1443,6 +1492,7 @@
 				897816772674EE1D00710B13 /* MainMenuViewModelProtocol.swift in Sources */,
 				894064DD2612308800DC682F /* UIView+RoundedCorners.swift in Sources */,
 				8970998F269571D00082F99D /* AuthenticationOutput.swift in Sources */,
+				89709A222696551C0082F99D /* ViteWalletRequestBuilder.swift in Sources */,
 				897816782674EE1D00710B13 /* MainMenuViewModel.swift in Sources */,
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
@@ -1463,9 +1513,11 @@
 				897099B0269575840082F99D /* WalletViewModel.swift in Sources */,
 				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
+				89709A1D2696551C0082F99D /* ViteWalletNetworkServiceProtocol.swift in Sources */,
 				892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */,
 				8965F1342675CC4300454B69 /* AboutUsOutput.swift in Sources */,
 				894064EA2612308800DC682F /* ModuleTransitionHandler.swift in Sources */,
+				89709A1E2696551C0082F99D /* ViteWalletNetworkService.swift in Sources */,
 				897099B6269575840082F99D /* WalletView.swift in Sources */,
 				8940645726122B7600DC682F /* CompletionTypealiasesDefault.swift in Sources */,
 				892B1FAE261D2F1B00329B0A /* CACornerMask+typealias.swift in Sources */,

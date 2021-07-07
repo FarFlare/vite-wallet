@@ -6,7 +6,11 @@
 //
 
 final class WalletViewModel {
+    
 	var output: WalletOutput?
+    
+    var viteWalletNetwork: ViteWalletNetworkServiceProtocol!
+
 }
 
 // MARK: - Configuration

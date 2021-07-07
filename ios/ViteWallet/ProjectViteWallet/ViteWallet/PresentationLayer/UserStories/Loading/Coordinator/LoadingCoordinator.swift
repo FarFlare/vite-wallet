@@ -18,6 +18,8 @@ final class LoadingCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.viteWalletNetwork = ViteWalletNetworkService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

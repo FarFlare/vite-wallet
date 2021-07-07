@@ -7,4 +7,5 @@
 
 protocol AuthenticationViewModelProtocol: AnyObject {
     
+    func signIn(email: String, password: String, completion: @escaping(Result<Void, NetworkServiceError>) -> Void)
 }
