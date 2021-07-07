@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>ViteWallet</string>
+	<string>Vitelet</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -41,21 +41,19 @@
 	<string>To pick photos you need to provide access to gallery </string>
 	<key>UIAppFonts</key>
 	<array>
-        
-        <string>Averta Cyrillic Thin.otf</string>
-        <string>Averta Cyrillic ExtraBold.otf</string>
-        <string>Averta Cyrillic Bold.otf</string>
-        <string>Averta Cyrillic Regular.otf</string>
-        <string>Averta Cyrillic Extra Thin.otf</string>
-        <string>Averta Cyrillic Light.otf</string>
-        <string>Averta Cyrillic SemiBold.otf</string>
-        <string>OpenSans-SemiBold.ttf</string>
-        <string>OpenSans-Light.ttf</string>
-        <string>OpenSans-Italic.ttf</string>
-        <string>OpenSans-ExtraBold.ttf</string>
-        <string>OpenSans-Bold.ttf</string>
-        <string>OpenSans-Regular.ttf</string>
-                        
+		<string>Averta Cyrillic Thin.otf</string>
+		<string>Averta Cyrillic ExtraBold.otf</string>
+		<string>Averta Cyrillic Bold.otf</string>
+		<string>Averta Cyrillic Regular.otf</string>
+		<string>Averta Cyrillic Extra Thin.otf</string>
+		<string>Averta Cyrillic Light.otf</string>
+		<string>Averta Cyrillic SemiBold.otf</string>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
